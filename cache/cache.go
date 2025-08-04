@@ -2,7 +2,7 @@
 * @desc:缓存功能
 * @company:云南奇讯科技有限公司
 * @Author: yixiaohu
-* @Date:   2022/2/22 14:15
+* @Date:   2025/2/22 14:15
  */
 
 package cache
@@ -15,8 +15,8 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gcache"
 	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/tiger1103/gfast-cache/adapter"
-	"github.com/tiger1103/gfast-cache/instance"
+	"github.com/xishuai416/gfast-cache/adapter"
+	"github.com/xishuai416/gfast-cache/instance"
 	"reflect"
 	"sync"
 	"time"

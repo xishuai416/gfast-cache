@@ -18,7 +18,7 @@ import (
 	"github.com/gogf/gf/v2/os/gcache"
 	"github.com/gogf/gf/v2/os/gtime"
 	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/tiger1103/gfast-cache/instance"
+	"github.com/xishuai416/gfast-cache/instance"
 	"reflect"
 	"sync"
 	"time"

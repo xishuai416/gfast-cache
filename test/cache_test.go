@@ -2,7 +2,7 @@
 * @desc:功能测试
 * @company:云南奇讯科技有限公司
 * @Author: yixiaohu
-* @Date:   2022/2/23 9:13
+* @Date:   2025/2/23 9:13
  */
 
 package test
@@ -13,8 +13,8 @@ import (
 	_ "github.com/gogf/gf/contrib/nosql/redis/v2"
 	"github.com/gogf/gf/v2/database/gredis"
 	"github.com/gogf/gf/v2/frame/g"
-	"github.com/tiger1103/gfast-cache/adapter"
-	"github.com/tiger1103/gfast-cache/cache"
+	"github.com/xishuai416/gfast-cache/adapter"
+	"github.com/xishuai416/gfast-cache/cache"
 	"testing"
 )
 
