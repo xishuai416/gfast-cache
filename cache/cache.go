@@ -217,6 +217,7 @@ func (c *GfCache) Removes(ctx context.Context, keys []string) {
 // RemoveByTag deletes the <tag> in the cache, and returns its value.
 func (c *GfCache) RemoveByTag(ctx context.Context, tag string) {
 	c.tagSetMux.Lock()
+	defer c.tagSetMux.Unlock()
 	tagKey := c.setTagKey(tag)
 	//删除tagKey 对应的 key和值
 	keys := c.Get(ctx, tagKey)
@@ -236,7 +237,6 @@ func (c *GfCache) RemoveByTag(ctx context.Context, tag string) {
 		}
 	}
 	c.Remove(ctx, tagKey)
-	c.tagSetMux.Unlock()
 }
 
 // RemoveByTags deletes <tags> in the cache.
